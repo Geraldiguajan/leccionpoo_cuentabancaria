@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:accessibilityTraversalAfter="@id/BIENVENIDOS"
+    android:accessibilityTraversalBefore="@id/BIENVENIDOS"
+    android:background="#A7BC53D6"
+tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BIENVENIDOS "
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <RadioButton
+        android:id="@+id/btningresar"
+        android:layout_width="97dp"
+        android:layout_height="48dp"
+        android:text="Ingresar "
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="149dp" />
+
+    <RadioButton
+        android:id="@+id/btnversaldo"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Ver Saldo "
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <RadioButton
+        android:id="@+id/btnretirar"
+        android:layout_width="97dp"
+        android:layout_height="45dp"
+        android:text="Retirar"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="197dp" />
+
+    <RadioButton
+        android:id="@+id/btnsalir"
+        android:layout_width="99dp"
+        android:layout_height="49dp"
+        android:text="Salir "
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <TextView
+        android:id="@+id/texversaldo"
+        android:layout_width="213dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/btnversaldo"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/texingresar"
+        android:layout_width="235dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="¿Cuanto dinero va a ingresar?"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/btningresar"
+        app:layout_constraintTop_toBottomOf="@+id/texversaldo" />
+
+    <EditText
+        android:id="@+id/txtretirar"
+        android:layout_width="235dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="¿Cuanto dinero va a retirar?"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/btnretirar"
+        app:layout_constraintTop_toBottomOf="@+id/texingresar" />
+
+    <Button
+        android:id="@+id/btnbuton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="OK"
+        app:layout_constraintTop_toBottomOf="@+id/txtretirar"
+        tools:layout_editor_absoluteX="294dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
